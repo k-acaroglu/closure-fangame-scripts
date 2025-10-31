@@ -18,7 +18,7 @@ public class PingManager : MonoBehaviour
         UIManager.Instance.SetRemainingPingsText(Remaining);
     }
 
-    public void ConsumeOne()
+    public void ReducePingByOne()
     {
         Remaining = Mathf.Max(0, Remaining - 1);
         UIManager.Instance.SetRemainingPingsText(Remaining);
