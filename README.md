@@ -1,0 +1,1 @@
+This is just the scripts of a game I'm working on using Unity and C#. It's just for version control purposes and contains nothing but the scripts. Everything else, such as assets, are private and won't be shared.
