@@ -22,5 +22,9 @@ public class PingManager : MonoBehaviour
     {
         Remaining = Mathf.Max(0, Remaining - 1);
         UIManager.Instance.SetRemainingPingsText(Remaining);
+        if (Remaining <= 0)
+        {
+            UIManager.Instance.SetStageClearedTextActive(true);
+        }
     }
 }

@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [Header("HUD")]
     [SerializeField] private TextMeshProUGUI interactText;
     [SerializeField] private TextMeshProUGUI remainingPingText;
+    [SerializeField] private TextMeshProUGUI stageClearedText;
 
     void Awake()
     {
@@ -23,6 +24,11 @@ public class UIManager : MonoBehaviour
         {
             remainingPingText.text = $"Remaining pings:  {value}";
         }
+    }
+
+    public void SetStageClearedTextActive(bool show)
+    {
+        stageClearedText.gameObject.SetActive(show);
     }
 
     public void ShowInteractText(bool show, string message = "Press F to interact")
